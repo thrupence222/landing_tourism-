@@ -6,9 +6,7 @@ body,html{
 	margin:0;
 }
 
-.padding{
-	padding:20px 0;
-}
+
 .navbar{
 	width:100%;
 	height:85px;
@@ -18,9 +16,11 @@ body,html{
 	font-size:22px;
 }
   .nav-link:hover{
+
 background: orange round;
 border-radius: 10px 0px 10px 0px;
 color: rgb(196, 220, 229);
+
 }
 
 .navbar-collapse{
@@ -34,13 +34,14 @@ justify-content: flex-end;
 
 .navbar-nav li{
 	padding-right:20px;
+	font-size:20px;
 }
 
 .img-responsive{
 height:200px;
 }
 
-.display-4{
+.display-5{
 color:#F97300;
 }
 
@@ -54,10 +55,6 @@ font-size: 18px;
 	border-radius: 0;
 	width:70%;
 	margin:0 auto;
-}
-
-.padding{
-	padding-bottom: 1em;
 }
 
 .alert{
@@ -84,10 +81,24 @@ h2{
 
 .list-group li:hover{
 	color:orange;
+	cursor: pointer;
 }
 
 .services, .contacts, .about{
-	padding:30px 0;
+	padding:25px 0;
+}
+
+.contacts{
+	font-size:20px;
+	align-items: flex-end;
+}
+
+.contacts li{
+	padding-top:10px;
+}
+
+.mail{
+	color:black;
 }
 
 
@@ -104,15 +115,6 @@ h2{
 	letter-spacing: 1.1px;
 }
 
-.rss{
-	text-align: center;
-	width:17%;
-	padding:20px 20px;
-}
-
-.form-group{
-	padding: 20px;
-}
 
 .soc-container{
 display: flex;
@@ -164,14 +166,22 @@ color: #4c75a3;
 	box-shadow: 0px 0px 35px #00acee;
 }
 
+.rss{
+width:15%;
+}
+
+.email{
+	margin: 20px 0;
+}
+
 .scrollto{
-	display: flex;
-	justify-content: space-around;
-	padding-top:25px;	
+	display: block;
+ 	width: 30px;
+    margin:10px 0 10px 97%;
 }
 
 .fa-arrow-up{
-  font-size:30px;
+  font-size:38px;
 }
 
 .fa-arrow-up:hover{
@@ -180,7 +190,12 @@ color:f97300;
 
 
 
- @media (max-width: 650px){
+
+ @media (max-width: 750px){
+ 	
+ 	body{
+ 		width:100%;
+ 	}
 
 	.carousel-caption .display-2{
 		font-size:2em;
@@ -196,11 +211,22 @@ color:f97300;
 	.nav-link:hover{
 		background: none !important;
 	}
+.navbar-nav{
+	background: #F2F3F4;
+	align-items: flex-end;
+	width:30%;
+	opacity: 0.8;
+}
+
+.googlemaps{
+	width:100% !important;
+}
 
 .contacts{
 align-items: flex-start;
 font-size:18px;
 }
+
 iframe{
  width:100%;
  height:60%;
@@ -213,4 +239,24 @@ iframe{
 	align-items: flex-start;
 }
 
+.rss{
+	width:60%;
+}
+
+.scrollto{
+	margin-left:80%;
+}
+
+}
+
+@media (max-width: 400px){
+#menu, .navbar-toggler{
+	display: none;
+}
+
+.navbar-brand img{
+	width:110px;
+ 	height:110px;
+ 	margin-left:-10px;
+}
 }
