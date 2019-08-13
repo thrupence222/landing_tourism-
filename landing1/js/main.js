@@ -1,4 +1,4 @@
-	
+//Карусель
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel(
 {
@@ -9,6 +9,7 @@ $(document).ready(function(){
   	);
 });
 
+//плавный скролл
 $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
         event.preventDefault();
@@ -37,6 +38,7 @@ Date.prototype.format = function(format = 'yyyy-mm-dd') {
 setInterval(function(){
     document.getElementById("time").innerHTML = new Date().format('hh:MM:ss dd.mm.yyyy');
 },1000);
+
 
 $(document).ready(function() {
   $("a.scrollto").click(function() {
